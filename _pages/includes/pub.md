@@ -88,7 +88,7 @@ which is featured by a novel adversarial strategy of domain confusion and discri
 <b>A New Benchmark: On the Utility of Synthetic Data with Blender for Bare Supervised Learning and Downstream Domain Adaptation</b><br>
 <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</i><br>
 <b>Hui Tang</b> and Kui Jia<br>
-[<a href="https://arxiv.org/pdf/2303.09165">PDF</a>] [<a href="https://github.com/huitangtang/On_the_Utility_of_Synthetic_Data">Code</a>] [<a href="https://huitangtang.github.io/On_the_Utility_of_Synthetic_Data/">Page</a>] [<a href="https://pan.baidu.com/s/1fHHaqrEHbUZLXEg9XKpgSg?pwd=w9wa">Dataset</a>] [<a href="bibtex/S2RDA.txt">BibTex</a>]<br>
+[<a href="https://arxiv.org/pdf/2303.09165">PDF</a>] [<a href="https://github.com/huitangtang/On_the_Utility_of_Synthetic_Data">Code</a>] [<a href="https://huitangtang.github.io/On_the_Utility_of_Synthetic_Data/">Page</a>] [<a href="https://cove.thecvf.com/datasets/892">Dataset</a>] [<a href="bibtex/S2RDA.txt">BibTex</a>]<br>
 <div style="text-align: justify">
 To solve the basic and important problems in the context of image classification, such as the lack of comprehensive synthetic data research and the insufficient exploration of synthetic-to-real transfer, we propose to exploit synthetic datasets to explore questions on model generalization, benchmark pre-training strategies for domain adaptation (DA), and <i>build a large-scale benchmark dataset S2RDA for synthetic-to-real transfer</i>, which can push forward future DA research.
 </div>
