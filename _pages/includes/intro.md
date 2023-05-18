@@ -6,5 +6,5 @@ My research interests include deep learning, pattern recognition, and computer v
 
 I serve as a reviewer for many international top conferences and journals, e.g., CVPR, ICCV, NeurIPS, ICML, ICME, IEEE TIP, IEEE TNNLS, Pattern Recognition, Neural Networks, TMLR, etc.
 
-Download my [CV](https://github.com/huitangtang/huitangtang/blob/main/Resume%20of%20Hui%20Tang.pdf) for more details.
+Download my [CV](https://huitangtang.github.io/CV/Resume_of_Hui_Tang.pdf) for more details.
 
