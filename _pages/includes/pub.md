@@ -30,7 +30,7 @@ and we thus term our method as H-SRDC.
 <b>Unsupervised domain adaptation via distilled discriminative clustering</b><br>
 <i>Pattern Recognition, 2022</i><br>
 <b>Hui Tang</b>, Yaowei Wang, and Kui Jia<br>
-[<a href="https://arxiv.org/pdf/2302.11984">PDF</a>] [<a href="https://github.com/huitangtang/DisClusterDA">Code</a>] [<a href="https://kyanchen.github.io/DisClusterDA/">Page</a>] [<a href="bibtex/DisClusterDA.txt">BibTex</a>]<br>
+[<a href="https://arxiv.org/pdf/2302.11984">PDF</a>] [<a href="https://github.com/huitangtang/DisClusterDA">Code</a>] [<a href="https://huitangtang.github.io/DisClusterDA/">Page</a>] [<a href="bibtex/DisClusterDA.txt">BibTex</a>]<br>
 <div style="text-align: justify">
 Motivated by the fundamental assumption for domain adaptability, we re-cast the domain adaptation problem as discriminative clustering of target data, 
 given strong privileged information provided by the closely related, labeled source data. 
