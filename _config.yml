@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Hui Tang (唐慧)"
-description              : "Ph.D. Student, South China University of Technology"
+description              : "Postdoc, The Hong Kong University of Science and Technology"
 repository               : "huitangtang/huitangtang.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  : code-ZxFK3f4pfb
 author:
   name             : "Hui Tang (唐慧)"
   avatar           : "image/HuiTang.jpg"
-  bio              : "South China University of Technology"
-  location         : "Guangzhou"
+  bio              : "The Hong Kong University of Science and Technology"
+  location         : "Hong Kong"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=eqVvhiQAAAAJ"
