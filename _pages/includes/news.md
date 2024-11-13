@@ -1,7 +1,8 @@
 # 🔥 News
+- *2024.11*: My [google scholar](https://scholar.google.com/citations?user=eqVvhiQAAAAJ) citations have exceeded 1300. 🎉
+- *2024.02*: A conference [paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Dual_Memory_Networks_A_Versatile_Adaptation_Approach_for_Vision-Language_Models_CVPR_2024_paper.pdf) is accepted by **<font color="red">CVPR</font>** in 2024. 🎉
 - *2023.09*: I have been a Postdoc in Dept. ECE at HKUST. 🎉
 - *2023.07*: I have received my PhD degree. 🎉
-- *2023.07*: My [google scholar](https://scholar.google.com/citations?user=eqVvhiQAAAAJ) citations have exceeded 900. 🎉
 - *2023.06*: I pass the PhD thesis defence and my thesis is appraised as excellent. 🎉
 - *2023.05*: A new synthetic-to-real benchmark [S2RDA](https://cove.thecvf.com/datasets/892) is published by the CVF repository. 🎉
 - *2023.02*: A conference [paper](https://arxiv.org/pdf/2303.09165) is accepted by **<font color="red">CVPR</font>** in 2023. 🎉
