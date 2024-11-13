@@ -1,0 +1,6 @@
+@inproceedings{zhang2024dual,
+  title={Dual Memory Networks: A Versatile Adaptation Approach for Vision-Language Models},
+  author={Zhang, Yabin and Zhu, Wenjie and Tang, Hui and Ma, Zhiyuan and Zhou, Kaiyang and Zhang, Lei},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  year={2024}
+}
