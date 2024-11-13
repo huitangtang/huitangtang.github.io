@@ -82,6 +82,21 @@ which is featured by a novel adversarial strategy of domain confusion and discri
 </div>
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/S2RDA.png"><img src='image/DMN.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Dual Memory Networks: A Versatile Adaptation Approach for Vision-Language Models</b><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024</i><br>
+Yabin Zhang, Wenjie Zhu, <b>Hui Tang</b>, Zhiyuan Ma, Kaiyang Zhou, and Lei Zhang<br>
+[<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Dual_Memory_Networks_A_Versatile_Adaptation_Approach_for_Vision-Language_Models_CVPR_2024_paper.pdf">PDF</a>] [<a href="https://github.com/YBZh/DMN">Code</a>] [<a href="bibtex/DMN.txt">BibTex</a>]<br>
+<div style="text-align: justify">
+To address the limitations of existing approaches that focus solely on single visual-language model adaptation paradigm, we propose a versatile adaptation method that simultaneously accommodates three key settings: zero-shot, few-shot, and training-free few-shot. Using static and dynamic memory networks to extract insights from labeled training and historical test data, our adaptive classifiers convert test features into desired outputs. Validated across 11 datasets, our method achieves a 3% improvement over competitors and outperforms those using external training data in zero-shot scenarios.
+</div>
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/S2RDA.png"><img src='image/S2RDA.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
