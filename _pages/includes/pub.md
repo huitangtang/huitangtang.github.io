@@ -82,7 +82,7 @@ which is featured by a novel adversarial strategy of domain confusion and discri
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DMN.png"><img src='image/DMN.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DMN.jpg"><img src='image/DMN.jpg' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Dual Memory Networks: A Versatile Adaptation Approach for Vision-Language Models</b><br>
