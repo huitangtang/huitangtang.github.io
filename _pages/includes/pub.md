@@ -11,7 +11,7 @@
 <b>Hui Tang</b>, Xiatian Zhu, Ke Chen, Kui Jia, and CL Philip Chen<br>
 [<a href="https://arxiv.org/pdf/2012.04280">PDF</a>] [<a href="https://github.com/huitangtang/H-SRDC">Code</a>] [<a href="https://huitangtang.github.io/H-SRDC/">Page</a>] [<a href="bibtex/H-SRDC.txt">BibTex</a>]<br>
 <div style="text-align: justify">
-We are motivated by a Unsupervised domain adaptation (UDA) assumption of structural similarity across domains, 
+We are motivated by a unsupervised domain adaptation (UDA) assumption of structural similarity across domains, 
 and propose to directly uncover the intrinsic target discrimination via constrained clustering, 
 where we constrain the clustering solutions using structural source regularization that hinges on the very same assumption. 
 Technically, we propose a hybrid model of Structurally Regularized Deep Clustering, 
