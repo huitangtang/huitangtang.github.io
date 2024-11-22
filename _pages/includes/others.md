@@ -1,5 +1,5 @@
 
-# 💻 Working Experience
+# 💻 Work Experience
 - *2023.09 - Present*, Postdoc in the Department of Electronic and Computer Engineering, The Hong Kong University of Science and Technology, Hong Kong.
 
 # 📖 Education
