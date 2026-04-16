@@ -21,7 +21,7 @@ jobs:
     - name: Run Updater
       env:
         # 将敏感信息通过 env 传递，避免 shell 解析问题
-        REMOTE_REPO: "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/huitangtang/huitangtang.git"
+        REMOTE_REPO: "https://${{ github.actor }}:${{ secrets.CLASSIC_GITHUB_API_TOKEN }}@github.com/huitangtang/huitangtang.git"
       run: |
         cd ./github_myprofile_updater
         python3 update.py
