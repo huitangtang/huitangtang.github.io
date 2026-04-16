@@ -1,51 +1,23 @@
-name: Update GitHub Profile via PR
+name: Update Github Profile
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
-
+on: 'page_build'
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Install Requirements
+    - uses: actions/checkout@v2
+    - name: Install Reqs
       run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-setuptools git
-        
-    - name: Run Updater & Create PR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用内置 token
+        sudo apt-get install python3-setuptools
+    - name: Run
       run: |
         cd ./github_myprofile_updater
         python3 update.py
-        
-        # 配置 git
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # 创建新分支并提交
-        BRANCH_NAME="auto-update-profile-${{ github.run_number }}"
-        git checkout -b "$BRANCH_NAME"
-        git add README.md images/
-        
-        # 仅当有变更时才创建提交和 PR
-        if ! git diff --staged --quiet; then
-          git commit -m "chore: auto-update profile [skip ci]"
-          git push -u origin "$BRANCH_NAME"
-          
-          # 创建 Pull Request
-          gh pr create \
-            --title "chore: auto-update profile" \
-            --body "Automated update from GitHub Actions workflow" \
-            --base main \
-            --head "$BRANCH_NAME"
-        else
-          echo "No changes to commit"
-        fi
+        git init
+        git config --local user.name "${GITHUB_ACTOR}"
+        git config --local user.email "ee.ht.tang@outlook.com"
+        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.CLASSIC_GITHUB_API_TOKEN }}@github.com/huitangtang/huitangtang.git"
+        git add README.md
+        git add images
+        git commit -m "update my description automatically"
+        git push "${remote_repo}" HEAD:main --force
