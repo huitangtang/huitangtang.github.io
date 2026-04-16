@@ -16,7 +16,7 @@ def generate_readme(output_path='README.md'):
     sections = [
         ('', base_dir + '/intro.md'),
         ('##', base_dir + '/homepage.md'),
-        ('##', base_dir + '/news.md'),
+        # ('##', base_dir + '/news.md'),
         # ('##', base_dir + '/pub_short.md'),  # 按需启用
     ]
     
