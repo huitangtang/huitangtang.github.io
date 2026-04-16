@@ -1,37 +1,51 @@
-name: Update GitHub Profile
+name: Update GitHub Profile via PR
 
 on:
-  workflow_dispatch:  # 手动触发
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # 可选：每天 UTC 0 点执行
+    - cron: '0 0 * * *'
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # 关键：授予写入权限
+      contents: write
+      pull-requests: write
     steps:
-    - uses: actions/checkout@v4  # 使用最新版
+    - uses: actions/checkout@v4
     
     - name: Install Requirements
       run: |
         sudo apt-get update
         sudo apt-get install -y python3-setuptools git
         
-    - name: Run Updater
+    - name: Run Updater & Create PR
       env:
-        # 将敏感信息通过 env 传递，避免 shell 解析问题
-        REMOTE_REPO: "https://${{ github.actor }}:${{ secrets.CLASSIC_GITHUB_API_TOKEN }}@github.com/huitangtang/huitangtang.git"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用内置 token
       run: |
         cd ./github_myprofile_updater
         python3 update.py
         
-        git init
-        git config --local user.name "${{ github.actor }}"
-        git config --local user.email "ee.ht.tang@outlook.com"
+        # 配置 git
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
+        # 创建新分支并提交
+        BRANCH_NAME="auto-update-profile-${{ github.run_number }}"
+        git checkout -b "$BRANCH_NAME"
         git add README.md images/
-        git commit -m "chore: auto-update profile [skip ci]"
         
-        # 使用环境变量中的 remote_repo
-        git push "${REMOTE_REPO}" HEAD:main --force-with-lease  # 更安全的 force 推送
+        # 仅当有变更时才创建提交和 PR
+        if ! git diff --staged --quiet; then
+          git commit -m "chore: auto-update profile [skip ci]"
+          git push -u origin "$BRANCH_NAME"
+          
+          # 创建 Pull Request
+          gh pr create \
+            --title "chore: auto-update profile" \
+            --body "Automated update from GitHub Actions workflow" \
+            --base main \
+            --head "$BRANCH_NAME"
+        else
+          echo "No changes to commit"
+        fi
