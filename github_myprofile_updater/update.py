@@ -21,7 +21,7 @@ def generate_readme(output_path='README.md'):
     ]
     
     # 构建内容
-    content_parts = ['## Hi there 👋']  # 固定 header
+    content_parts = ['## Hi there!']  # 固定 header
     for prefix, filepath in sections:
         content = load_section(filepath)
         if content:  # 仅添加非空章节
