@@ -4,4 +4,4 @@ I am a Postdoctoral Research Fellow at the [Department of Electronic and Compute
 
 My research centers on deep learning for computer vision and medical image analysis, spanning foundational topics (few-shot learning, domain adaptation, multi-modal fusion, interpretability) and frontier directions (generative modeling, VFM/VLM/LLM, multi-agent systems) to enable robust, scalable, and deployable AI solutions.
 
-I actively serve as a reviewer for top-tier conferences (CVPR, ICCV, AAAI, NeurIPS, ICML, ICLR, ICME) and journals (TIP, PR, TNNLS, EAAI, ESWA, NEUNET, NEUCOM, JBHI, INS, etc).
+I actively serve as a reviewer for top-tier conferences (CVPR, ICCV, AAAI, NeurIPS, ICML, ICLR, ICME) and journals (TPAMI, TIP, PR, ESWA, TNNLS, EAAI, JBHI, NEUNET, NEUCOM, INS, etc).
